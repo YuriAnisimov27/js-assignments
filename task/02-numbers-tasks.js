@@ -168,7 +168,7 @@ function parseNumberFromString(value) {
  *   1,2,3   => 3.741657386773941
  */
 function getParallelipidedDiagonal(a, b, c) {
-    return Math.sqrt(a**2 + b**2 + c**2);
+    return Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2) + Math.pow(c, 2));
     throw new Error('Not implemented');
 }
 
@@ -190,7 +190,7 @@ function getParallelipidedDiagonal(a, b, c) {
  *   1678, 3  => 2000
  */
 function roundToPowerOfTen(num, pow) {
-    return Math.round(num / 10**pow) * 10**pow;
+    return Math.round(num / Math.pow(10, pow)) * Math.pow(10, pow);
     throw new Error('Not implemented');
 }
 
