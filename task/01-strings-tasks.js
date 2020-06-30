@@ -127,7 +127,7 @@ function repeatString(value, count) {
  * @example
  *   'To be or not to be', 'not'  => 'To be or to be'
  *   'I like legends', 'end' => 'I like legs',
- *   'ABABAB','BA' => 'ABAB'
+ *   'ABABAB','BA' => 'ABAB'q
  */
 function removeFirstOccurrences(str, value) {
     throw new Error('Not implemented');
