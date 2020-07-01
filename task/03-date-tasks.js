@@ -81,10 +81,8 @@ function isLeapYear(date) {
  *    Date(2000,1,1,10,0,0),  Date(2000,1,1,15,20,10,453)   => "05:20:10.453"
  */
 function timeSpanToString(startDate, endDate) {
-    return (new Date(endDate - startDate).toISOString().slice(11, -1));
-   throw new Error('Not implemented');
+    return new Date(endDate - startDate).toISOString().slice(11, -1)
 }
-
 
 /**
  * Returns the angle (in radians) between the hands of an analog clock for the specified Greenwich time.
