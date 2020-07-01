@@ -89,7 +89,7 @@ function timeSpanToString(startDate, endDate) {
         mins = tempMins < 10 ? `0${tempMins}` : tempMins,
         sec = tempSec < 10 ? `0${tempSec}` : tempSec,
         millisec = tempMillisec < 10 ? `00${tempMillisec}` : tempMillisec;
-    return `${hours}:${mins}:${sec}.${millisec}`;
+    return `${hours % 24}:${mins}:${sec}.${millisec}`;
    throw new Error('Not implemented');
 }
 
