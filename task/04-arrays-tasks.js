@@ -278,7 +278,8 @@ function propagateItemsByPositionIndex(arr) {
       let temp_arr = new Array(index + 1).fill(item);
       return temp_arr;
    });
-   return result.flat();
+   result = result.flat();
+   return result;
 }
 
 
@@ -559,7 +560,7 @@ function group(array, keySelector, valueSelector) {
  *   ['one','two','three'], x=>x.split('')  =>   ['o','n','e','t','w','o','t','h','r','e','e']
  */
 function selectMany(arr, childrenSelector) {
-   return arr.map(childrenSelector).flat();
+   return arr.map(childrenSelector).reduce((acc, curValue) => acc.concat(curValue))
 }
 
 
