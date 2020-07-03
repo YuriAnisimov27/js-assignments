@@ -23,7 +23,6 @@
  */
 function getRectangleArea(width, height) {
     return width * height;
-    throw new Error('Not implemented');
 }
 
 
@@ -40,7 +39,6 @@ function getRectangleArea(width, height) {
  */
 function getCicleCircumference(radius) {
     return 2 * Math.PI * radius;
-    throw new Error('Not implemented');
 }
 
 /**
@@ -57,7 +55,6 @@ function getCicleCircumference(radius) {
  */
 function getAverage(value1, value2) {
     return (value1 / 2 + value2 / 2);
-    throw new Error('Not implemented');
 }
 
 /**
@@ -77,7 +74,6 @@ function getAverage(value1, value2) {
  */
 function getDistanceBetweenPoints(x1, y1, x2, y2) {
     return Math.sqrt(Math.pow((x1 - x2), 2) + Math.pow((y1 - y2), 2));
-    throw new Error('Not implemented');
 }
 
 /**
@@ -94,7 +90,6 @@ function getDistanceBetweenPoints(x1, y1, x2, y2) {
  */
 function getLinearEquationRoot(a, b) {
     return -b / a;
-    throw new Error('Not implemented');
 }
 
 
@@ -117,7 +112,6 @@ function getLinearEquationRoot(a, b) {
  */
 function getAngleBetweenVectors(x1, y1, x2, y2) {
     return Math.abs(Math.atan(y1 / x1) - Math.atan(y2 / x2));
-    throw new Error('Not implemented');
 }
 
 /**
@@ -134,7 +128,6 @@ function getAngleBetweenVectors(x1, y1, x2, y2) {
  */
 function getLastDigit(value) {
     return value % 10;
-    throw new Error('Not implemented');
 }
 
 
@@ -151,7 +144,6 @@ function getLastDigit(value) {
  */
 function parseNumberFromString(value) {
     return Number(value);
-    throw new Error('Not implemented');
 }
 
 /**
@@ -169,7 +161,6 @@ function parseNumberFromString(value) {
  */
 function getParallelipidedDiagonal(a, b, c) {
     return Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2) + Math.pow(c, 2));
-    throw new Error('Not implemented');
 }
 
 /**
@@ -191,7 +182,6 @@ function getParallelipidedDiagonal(a, b, c) {
  */
 function roundToPowerOfTen(num, pow) {
     return Math.round(num / Math.pow(10, pow)) * Math.pow(10, pow);
-    throw new Error('Not implemented');
 }
 
 /**
@@ -214,7 +204,6 @@ function roundToPowerOfTen(num, pow) {
 function isPrime(n) {
     for (let i = 2; i < n; i += 1) if (n % i === 0) return false;
     return n > 1;
-    throw new Error('Not implemented');
 }
 
 /**
@@ -237,7 +226,6 @@ function toNumber(value, def) {
         return def;
     }
     return Number.parseFloat(value);
-    throw new Error('Not implemented');
 }
 
 module.exports = {

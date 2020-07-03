@@ -23,7 +23,6 @@
  */
 function parseDataFromRfc2822(value) {
     return new Date(value);
-   throw new Error('Not implemented');
 }
 
 /**
@@ -39,7 +38,6 @@ function parseDataFromRfc2822(value) {
  */
 function parseDataFromIso8601(value) {
     return new Date(value);
-   throw new Error('Not implemented');
 }
 
 
@@ -61,7 +59,6 @@ function isLeapYear(date) {
     let data = date.getFullYear();
     if (data % 400 === 0 || (data % 4 === 0 && data % 100 !== 0)) { return true; }
     return false;
-   throw new Error('Not implemented');
 }
 
 
@@ -87,7 +84,6 @@ function timeSpanToString(startDate, endDate) {
     if (date.getDay() > 4) { hours = `${hours + 24}` };
     if (hours < 10) { hours = `0${hours}` };
     return `${hours}${min_and_sec}`;
-    throw new Error('Not implemented');
 }
 
 /**
@@ -109,7 +105,6 @@ function angleBetweenClockHands(date) {
         hours = 0.5 * (60 * hour + date.getUTCMinutes()),
         angle = hours - minutes > 180 ? hours - minutes - 180 : hours - minutes;
     return (Math.PI * Math.abs(angle)) / 180;
-    throw new Error('Not implemented');
 }
 
 
