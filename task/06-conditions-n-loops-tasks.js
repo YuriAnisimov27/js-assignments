@@ -129,7 +129,6 @@ function doRectanglesOverlap(rect1, rect2) {
     let point_top = rect1.top + rect1.height,
         point_bottom = rect1.left + rect1.width;
     return (point_bottom > rect2.left && point_top > rect2.top);
-    throw new Error('Not implemented');
 }
 
 
@@ -162,7 +161,6 @@ function doRectanglesOverlap(rect1, rect2) {
 function isInsideCircle(circle, point) {
     let dist = Math.pow((point.x - circle.center.x), 2) + Math.pow((point.y - circle.center.y), 2);
     return dist < Math.pow(circle.radius, 2);
-    throw new Error('Not implemented');
 }
 
 
