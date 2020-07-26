@@ -68,9 +68,9 @@ function getFactorial(n) {
  *   -1,1  =>  0  ( = -1 + 0 + 1 )
  */
 function getSumBetweenNumbers(n1, n2) {
-    let sum_between_numbers = 0;
-    for (let i = n1; i <= n2; i++) { sum_between_numbers += i; }
-    return sum_between_numbers;
+    let sumBetweenNumbers = 0;
+    for (let i = n1; i <= n2; i++) { sumBetweenNumbers += i; }
+    return sumBetweenNumbers;
 }
 
 
@@ -126,9 +126,9 @@ function isTriangle(a,b,c) {
  *  
  */
 function doRectanglesOverlap(rect1, rect2) {
-    let point_top = rect1.top + rect1.height,
-        point_bottom = rect1.left + rect1.width;
-    return (point_bottom > rect2.left && point_top > rect2.top);
+    let pointTop = rect1.top + rect1.height,
+        pointBottom = rect1.left + rect1.width;
+    return (pointBottom > rect2.left && pointTop > rect2.top);
 }
 
 
@@ -464,8 +464,8 @@ function getCommonDirectoryPath(pathes) {
             }
         }
     }
-    let last_slash = pattern.lastIndexOf('/') + 1;
-    return pattern.slice(0, last_slash);
+    let lastSlash = pattern.lastIndexOf('/') + 1;
+    return pattern.slice(0, lastSlash);
 }
 
 
@@ -488,15 +488,15 @@ function getCommonDirectoryPath(pathes) {
  *
  */
 function getMatrixProduct(m1, m2) {
-    let rows_m1 = m1.length, cols_m1 = m1[0].length,
-        rows_m2 = m2.length, cols_m2 = m2[0].length,
+    let rowsM1 = m1.length, colsM1 = m1[0].length,
+        rowsM2 = m2.length, colsM2 = m2[0].length,
         result = [];
-    if (cols_m1 != rows_m2) { return false; }
-    for (let i = 0; i < rows_m1; i++) { result[i] = []; }
-    for (let k = 0; k < cols_m2; k++)
-        { for (let i = 0; i < rows_m1; i++)
+    if (colsM1 != rowsM2) { return false; }
+    for (let i = 0; i < rowsM1; i++) { result[i] = []; }
+    for (let k = 0; k < colsM2; k++)
+        { for (let i = 0; i < rowsM1; i++)
             { let t = 0;
-                for (let j = 0; j < rows_m2; j++) t += m1[i][j] * m2[j][k];
+                for (let j = 0; j < rowsM2; j++) t += m1[i][j] * m2[j][k];
                 result[i][k] = t;
             }
         }
